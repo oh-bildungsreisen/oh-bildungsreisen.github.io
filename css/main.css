@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    padding:0;
+    margin:0;
+    background:#fff;
+}
+
+
+/* Logo in the header */
+.image_logo{
+    background-image: url("../images/logo/logo.svg");
+}
+.image_logo:hover{
+    background-image: url("../images/logo/logo_inverted.svg");
+}
+
+
+/* navigation */
+.navbar{
+    background:#560020ff;
+}
+.nav-link, .navbar-brand{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right: 1em !important;
+}
+.nav-link:hover{
+    background: #f4f4f4;
+    color: #560020ff;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-toggler{
+    background:#fff !important;
+}
+
+
+/* header with image and description text */
+.header{
+    position: relative;
+    background-image: url('../images/banner/__home.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+    color:#560020ff;
+    font-family: 'Montserrat', sans-serif;
+}
+.description p{
+    color:#000;
+    font-size: 16px;
+    width: 100%;
+    max-width:640px;
+    line-height: 1.5;
+    padding: 2em 0 1em 0;
+}
+.description button{
+    background:#560020ff;
+    color:#fff;
+}
+
+.btn btn-outline-secondary{
+/*    border:1px solid #560020ff;*/
+    background:#560020ff;
+    color:#fff;
+}
+
+/* Home page and Philosophie */
+.philo{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+.philo h1{
+    color:#560020ff;
+    margin: 1.6em 0 0 0;
+    text-align:left;
+}
+.philo img{
+    /*height: 100%;*/
+    width: 100%;
+    /*border-radius: 50%*/
+    padding:2.5em 0 0 0.1em;
+}
+/* image caption left */
+.philo span{
+    /*display: block;*/
+    text-align:left;
+    color: #000;
+    position: absolute;
+    /*left: 115px;*/
+    padding: 1em 0 0 0;
+}
+/* Text Block right side container */
+/* vertical line */
+.philo .desc{
+    padding: 2.5em 1em 0 1em;
+    /*border-left:4px solid #671036;*/
+}
+/* subheadings of the text block */
+.philo .desc h3{
+    color: #560020ff;
+    font-size:20px;
+    font-weight:bold;
+}
+/* text of text block right side */
+.philo .desc p{
+    line-height:1.75;
+    color:#000;
+    padding-top:1em;
+}
+
+
+/* Galerie */
+.galerie{
+    margin: 4em 0;
+    position: relative;
+}
+.galerie h1{
+    color:#560020ff;
+    margin: 1em 0 1em 1.75em;
+    text-align:left;
+}
+.galerie img{
+  height: 15rem;
+  width: 100%;
+  margin: 0em;
+}
+
+
+/* reisen */
+.reisen{
+    margin: 4em 0;
+    position: relative;
+}
+/* Unsere Reisen */
+.reisen h1{
+    color:#560020ff;
+    /*margin: 2em;*/
+    padding: 2em 0 2.1em 0;
+}
+.reisen .item{
+    position: relative;
+    overflow: hidden;
+}
+/* change cursor to pointer over image */
+.item{
+    cursor: pointer;
+}
+
+/* Reisetitel unter dem Reisebild */
+.reisen .des{
+    background: #560020ff;
+    color: #fff;
+    text-align: left;
+    padding-left:0.1em;
+    border-bottom-left-radius: 0%;
+    transition:.3s ease-in-out;
+    position: absolute;
+    width: 87.5%;
+    bottom: 24px;
+}
+/* bordeaux overlay über dem Reisebild */
+.reisen .item:hover .des{
+    height: 100%;
+/*  background:#6710364D;*/
+    background:#5600204D;
+    position: absolute;
+    width: 90%;
+    padding: 3.8em;
+    top: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+/* reisedetails */
+.reisedetails{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+.reisedetails h1{
+    color:#560020ff;
+    margin: 0em 0 0 0;
+    text-align:left;
+}
+.reisedetails img{
+    /*height: 100%;*/
+    width: 100%;
+    /*border-radius: 50%*/
+    padding:2.5em 0 0 0.1em;
+}
+/* image caption left */
+.reisedetails span{
+    /*display: block;*/
+    text-align:left;
+    color: #000;
+    position: absolute;
+    /*left: 115px;*/
+    padding: 1em 0em 0em 0em;
+}
+/* Text Block right side container */
+/* vertical line */
+.reisedetails .desc{
+    padding: 2.5em 1em 0 1em;
+    /*border-left:4px solid #671036;*/
+}
+/* subheadings of the text block */
+.reisedetails .desc h3{
+    color: #560020ff;
+    font-size:20px;
+    font-weight:bold;
+}
+/* text of text block right side */
+.reisedetails .desc p{
+    line-height:1.75;
+    color:#000;
+    padding-top:1em;
+}
+
+
+/* Bildergalerie */
+.bildergalerie{
+    margin:0.1em 0 0.5em 0;
+}
+.thumb{
+    margin-bottom: 1.5em;
+}
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Kontakt */
+.contact-form{
+    margin: 6em 0;
+    position: relative;
+    padding: 2em 0 0 0;
+}
+/* Kontaktieren Sie uns */
+.contact-form h1{
+    /*padding:0em 0.3em;*/
+    padding: 1.2em 0em 0.3em 0em;
+    color: #560020ff;
+}
+.contact-form .right{
+    padding: 3.2em 0 0.75em 0;
+    max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+    background:  #560020ff;
+    color: #fff;
+    border:0;
+}
+.contact-form .right .form-control::placeholder{
+    color: #888;
+    font-size: 16px;
+}
+
