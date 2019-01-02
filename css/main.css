@@ -47,18 +47,28 @@ body{
 /* header with image and description text */
 .header{
     position: relative;
-    background-image: url('../images/banner/__home.jpg');
+    background-image: url('../images/banner/headerbg.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
+/*
 .overlay{
     position: absolute;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.79);
+    background: rgba(244, 244, 244, 0.0);
+}
+*/
+.rectangle{
+    position: absolute;
+    min-height: 30%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 .description{
     position: absolute;
@@ -67,27 +77,37 @@ body{
     padding: 2em;
 }
 .description h1{
-    color:#560020ff;
+/*    color:#560020ff;*/
+    color:#fff;
+    font-weight:semi-bold;
     font-family: 'Montserrat', sans-serif;
 }
 .description p{
-    color:#000;
+    color:#fff;
     font-size: 16px;
+    font-weight:normal;
     width: 100%;
     max-width:640px;
     line-height: 1.5;
     padding: 2em 0 1em 0;
 }
 .description button{
-    background:#560020ff;
-    color:#fff;
+    background:#fff;
+    color:#560020ff;
+/*    background:#560020ff;*/
+/*    color:#fff;*/
+    border:none;
+}
+.btn btn-outline-secondary{
+    background:#fff;
+    color:#560020ff;
+/*    background:#560020ff;*/
+/*    color:#fff;*/
+/*    border:1px solid #560020ff;*/
+    border:none;
+
 }
 
-.btn btn-outline-secondary{
-/*    border:1px solid #560020ff;*/
-    background:#560020ff;
-    color:#fff;
-}
 
 /* Home page and Philosophie */
 .philo{
@@ -152,7 +172,7 @@ body{
 }
 
 
-/* reisen */
+/* reisevorschau – images as overview over available trips */
 .reisen{
     margin: 4em 0;
     position: relative;
@@ -161,43 +181,53 @@ body{
 .reisen h1{
     color:#560020ff;
     /*margin: 2em;*/
-    padding: 2em 0 2.1em 0;
+/*    padding: 2em 0 2.1em 0;*/
+    padding: 2em 0 0 0.1em;
 }
 .reisen .item{
     position: relative;
     overflow: hidden;
+    padding:0em;
+    padding-top:2em;
+    /*margin-right:0.3em;*/
 }
 /* change cursor to pointer over image */
 .item{
     cursor: pointer;
+    padding-top:2em;
+    /*margin-right:0.3em;*/
+}
+
+.pourtour {
+    padding: 0.3em; /* := x */
+    position:relative;
 }
 
 /* Reisetitel unter dem Reisebild */
+/* x=0.3 */
 .reisen .des{
     background: #560020ff;
     color: #fff;
     text-align: left;
-    padding-left:0.1em;
-    border-bottom-left-radius: 0%;
     transition:.3s ease-in-out;
     position: absolute;
-    width: 87.5%;
+    width: calc( 100% - 0.6em ); /* 2x */
+    max-width:500px;
     bottom: 24px;
+    transform: translate( 0,-0.3em); /* x */
 }
 /* bordeaux overlay über dem Reisebild */
 .reisen .item:hover .des{
-    height: 100%;
-/*  background:#6710364D;*/
+    height: calc( 100% - 0.6em ); /* 2x */
     background:#5600204D;
     position: absolute;
-    width: 90%;
-    padding: 3.8em;
-    top: 0;
+    width:calc( 100% - 0.6em ); /* 2x */
+    top: 0.6em; /* 2x */
     border-bottom-left-radius: 0;
 }
 
 
-/* reisedetails */
+/* einzelreisen reisedetails */
 .reisedetails{
     margin: 4em 0;
     padding: 1em;
@@ -292,5 +322,9 @@ img.zoom {
 .contact-form .right .form-control::placeholder{
     color: #888;
     font-size: 16px;
+}
+#kontakt img{
+    /*height: 100%;*/
+    width: 100%;
 }
 
