@@ -405,34 +405,64 @@
 </form>
 -->
 
+<!-- is this one activated
+<form method="POST" action="https://formspree.io/oh.bildungsreisen@gmail.com">
+  <input type="text" placeholder="Ihr Name" name="name">
+  <input type="email" name="email" placeholder="IhreEmail@email.com">
+  <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+  <button type="submit">Senden</button>
+</form>
+-->
+
 
         <div class="contact-form" id="kontakt">
             <div class="container">
-                <form>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <h1>Kontaktieren Sie uns</h1>
                             <img src="/images/banner/kontakt.jpg" class="img-fluid">
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="col-lg-8 col-md-8 col-sm-12 right" style="padding-left:1em;">
                             <form action="https://formspree.io/oh.bildungsreisen@gmail.com" method="POST">
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-lg" placeholder="Ihr Name" name="name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control form-control-lg" placeholder="IhreEmail@email.com" name="_replyto">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control form-control-lg">
-                                </textarea>
-                            </div>
-                            <input type="submit" class="btn btn-secondary btn-block" value="Senden" name="">
+                                <input type="text" id="nameInput" style="width:100%; padding: 0.5em; margin-top: 0.2em;" placeholder="Ihr Name" name="name">
+                                <input type="email" style="width:100%; padding: 0.5em; margin-top: 0.5em;" placeholder="IhreEmail@email.com" name="_replyto">
+                                <textarea name="message" placeholder="Ihre Nachricht" style="width:100%; min-height: 10em; padding: 0.5em; margin-top: 0.5em; border: thin solid #d3d3d3;"></textarea>
+                                <input type="submit" style="width:100%; padding: 0.5em; margin-top: 0.5em; background:#560020ff; color:#fff;" value="Senden" name="">
                             </form>
                         </div>
                     </div>
-                </form>
             </div>
         </div>
+
+       <!--
+        <div class="contact-form" id="kontakt">
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <h1>Kontaktieren Sie uns</h1>
+                                <img src="/images/banner/kontakt.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 right">
+                                <form action="https://formspree.io/oh.bildungsreisen@gmail.com" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Ihr Name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" placeholder="IhreEmail@email.com" name="_replyto">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control form-control-lg">
+                                    </textarea>
+                                </div>
+                                <input type="submit" class="btn btn-secondary btn-block" value="Senden" name="">
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        -->
 
 
 <!-- Contact form -->
