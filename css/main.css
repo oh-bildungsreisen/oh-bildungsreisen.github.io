@@ -18,6 +18,9 @@ body {
     background-image: url(/images/logo/logo.svg);
     background-size: 100%;
     transition:.3s ease-in-out;
+    -webkit-transition:.3s ease-in-out;
+    /*transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);*/
 }
 .image_logo:hover {
     background-image: url(/images/logo/logo_inverted.svg);
@@ -30,6 +33,7 @@ body {
     background-image: url(/images/logo/menuBar.svg);
     background-size: 100%;
     transition:.3s ease-in-out;
+    -webkit-transition:.3s ease-in-out;
 }
 .myCollapsedMenuBarIcon:hover {
     background-image: url(/images/logo/menuBar_inverted.svg);
