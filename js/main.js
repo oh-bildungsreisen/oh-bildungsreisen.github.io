@@ -25,6 +25,12 @@ $(document).ready(function(){
         function() {$(this).attr("src","/images/logo/logo_inverted.svg");},
         function() {$(this).attr("src","/images/logo/logo.svg");
     });
+
+    /* toggle collapsed menuBar icon once it is hovered over */
+    $(".myCollapsedMenuBarIcon").hover(
+        function() {$(this).attr("src","/images/logo/menuBar_inverted.svg");},
+        function() {$(this).attr("src","/images/logo/menuBar.svg");
+    });
 })
 
 /* go back to main page from single reise page */

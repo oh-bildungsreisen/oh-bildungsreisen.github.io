@@ -11,15 +11,19 @@ body{
     background:#fff;
 }
 
-
 /* Logo in the header */
 .image_logo{
+    height:2.5em;
     background-image: url("../images/logo/logo.svg");
 }
 .image_logo:hover{
     background-image: url("../images/logo/logo_inverted.svg");
 }
 
+/* menu collapsed button*/
+.myCollapsedMenuBarIcon {
+    height:2.5em;
+}
 
 /* navigation */
 .navbar{
@@ -41,6 +45,16 @@ body{
 }
 .navbar-toggler{
     background:#fff !important;
+    line-height: 0.6;
+    border-radius:50%;
+}
+
+
+button:focus {
+    outline: none;
+}
+button:active,.button:active:focus,.button:visited {
+    outline: none;
 }
 
 

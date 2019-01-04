@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-        <link href='https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Raleway|Ubuntu' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
     </head>
 
@@ -18,13 +19,12 @@
         <!-- currently, the fixed top class is added, so it sticks to the top-->
         <!-- data value of nav bar corresponds to id in each section -->
         <nav class="navbar navbar-expand-lg fixed-top ">
-            <!--<div id="circle" style="border-radius: 50%; width: 3em; height: 3em; margin:0 0 0 3em; background: #fff;"></div>-->
-            <!--<a class="navbar-brand" class="nav-link" href="/index.html#header" style="font-family:'Plaster'; font-size:30px; padding:0 0 0 1.3em;color:#fff" >h</a>-->
-            <a class="navbar-brand" class="nav-link" href="/index.html#header">
-                <img class="oh" class="image_logo" src="/images/logo/logo.svg" style="height:2.5em;"></img>
+
+            <a class="navbar-brand" href="#myheader">
+                <img class="oh image_logo" src="/images/logo/logo.svg" alt="">
             </a>
-            <button class="navbar-toggler" id="myMenuBtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">&#8801;</span>
+            <button class="navbar-toggler" id="myMenuBtn" type="button" data-toggle="collapse" data-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Toggle navigation" style="padding:0;border-radius: 50%" onclick="this.blur();">
+                <img class="myCollapsedMenuBarIcon" src="/images/logo/menuBar.svg" alt="">
             </button>
 
             <div class="collapse navbar-collapse" id="myMenu">

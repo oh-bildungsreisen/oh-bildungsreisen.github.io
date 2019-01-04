@@ -9,11 +9,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   viewBox="0 0 382.28573 382.28573"
-   height="107.88952mm"
-   width="107.88952mm"
+   viewBox="0 0 374.28571 374.28571"
+   height="105.63174mm"
+   width="105.63174mm"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="logo_inverted.svg">
+   sodipodi:docname="menuBar_inverted.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -23,21 +23,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1356"
-     inkscape:window-height="827"
-     id="namedview11"
+     inkscape:window-width="1513"
+     inkscape:window-height="971"
+     id="namedview12"
      showgrid="false"
-     inkscape:zoom="0.19212344"
-     inkscape:cx="191.14284"
-     inkscape:cy="191.14285"
+     inkscape:zoom="0.63053441"
+     inkscape:cx="187.14284"
+     inkscape:cy="187.14284"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg2"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4" />
   <metadata
@@ -53,29 +49,39 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="g4160"
-     transform="translate(0.50000048,0.50000048)">
+     id="g4159">
     <circle
        r="187.14285"
-       cy="190.64285"
-       cx="190.64285"
+       cy="187.14285"
+       cx="187.14285"
        id="path4217"
-       style="opacity:1;fill:#560020;fill-opacity:1;stroke:#ffffff;stroke-width:8.00000095;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="opacity:1;fill:#560020;fill-opacity:1;stroke:none;stroke-width:1.12399995;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <g
-       transform="translate(1006.5,49.137787)"
-       id="g4256">
+       id="g4154">
       <rect
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.12399995;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect4219"
-         width="60"
+         width="31.42857"
          height="220"
-         x="-882.85718"
-         y="31.505062" />
-      <path
-         inkscape:connector-curvature="0"
+         x="-202.85713"
+         y="77.142845"
+         transform="matrix(0,-1,1,0,0,0)" />
+      <rect
+         transform="matrix(0,-1,1,0,0,0)"
+         y="77.142845"
+         x="-142.85713"
+         height="220"
+         width="31.42857"
+         id="rect4143"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.12399995;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.12399995;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m -804.85718,97.219345 c 0,0 12.00611,0 22,0 9.99389,0 21.23237,4.429645 28,11.999995 7.69082,8.60305 10,17.96754 10,33.14287 0,15.17533 0,109.14286 0,109.14286 l -60,0 z"
-         id="rect4247" />
+         id="rect4145"
+         width="31.42857"
+         height="220"
+         x="-262.85715"
+         y="77.142845"
+         transform="matrix(0,-1,1,0,0,0)" />
     </g>
   </g>
 </svg>
