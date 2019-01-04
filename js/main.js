@@ -19,6 +19,12 @@ $(document).ready(function(){
     }, function(){
         $(this).removeClass('transition');
     });
+
+    /* toggle oh-logo once it is hovered over */
+    $(".oh").hover(
+        function() {$(this).attr("src","/images/logo/logo_inverted.svg");},
+        function() {$(this).attr("src","/images/logo/logo.svg");
+    });
 })
 
 /* go back to main page from single reise page */
