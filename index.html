@@ -9,7 +9,6 @@
         <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-        <!--<link href='https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Raleway|Ubuntu' rel='stylesheet'>-->
         <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
     </head>
 
@@ -22,32 +21,30 @@
         <nav class="navbar navbar-expand-lg fixed-top ">
 
             <a class="navbar-brand" href="#myheader">
-                <!--<img class="oh image_logo" src="/images/logo/logo.svg" alt="">-->
                 <div class="image_logo"></div>
             </a>
             <button class="navbar-toggler myCollapsedMenuBarIcon" id="myMenuBtn" type="button" data-toggle="collapse" data-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Toggle navigation" style="padding:0;border:none;" onclick="this.blur();">
-                <!--<img class="myCollapsedMenuBarIcon" src="/images/logo/menuBar.svg" alt="">-->
             </button>
 
             <div class="collapse navbar-collapse" id="myMenu">
                 <ul class="navbar-nav mr-4">
                     <li class="nav-item">
-                        <a class="nav-link" data-value="home" href="#home">Über uns</a>
+                        <a class="nav-link" data-value="home" href="#">Über uns</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-value="philosophie" href="#philosophie">Philosophie</a>
+                        <a class="nav-link" data-value="philosophie" href="#">Philosophie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-value="reisen" href="#reisen">Reisen</a>
+                        <a class="nav-link" data-value="reisen" href="#">Reisen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-value="kontakt" href="#kontakt">Kontakt</a>
+                        <a class="nav-link" data-value="kontakt" href="#">Kontakt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-value="impressum" href="#impressum">Impressum</a>
+                        <a class="nav-link" data-value="impressum" href="#">Impressum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-value="agb" href="#agb">AGB</a>
+                        <a class="nav-link" data-value="agb" href="#">AGB</a>
                     </li>
                 </ul>
             </div>
@@ -71,14 +68,14 @@
 
 
         <!-- Home Über uns -->
-        <div class="row philo" id="home">
+        <div class="row mainpageparts" id="home">
             <div class="container">
                 <h1>Über uns</h1>
                 <div class="row">
                     <!-- left side -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div>
-                            <img src="/images/banner/home.jpg" class="img-fluid">
+                            <img src="/images/banner/home.jpg" class="img-fluid" alt="">
                         </div>
                         <div>
                             <span>Auf den Spuren Sherlock Holmes'</span>
@@ -130,14 +127,14 @@
 
 
         <!-- Philosophie -->
-        <div class="row philo" id="philosophie">
+        <div class="row mainpageparts" id="philosophie">
             <div class="container">
                 <h1>Philosophie</h1>
                 <div class="row">
                     <!-- left side -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div>
-                            <img src="/images/banner/philosophie.jpg" class="img-fluid">
+                            <img src="/images/banner/philosophie.jpg" class="img-fluid" alt="">
                         </div>
                         <div>
                             <span>Rhetorik unter Olivenbäumen</span>
@@ -194,7 +191,7 @@
         <!-- Reisevorschau -->
         <div class="reisen" id="reisen">
             <div class="container">
-                <h1>Unsere Reisen</h1>
+                <h1 id="reisen">Unsere Reisen</h1>
                 <div class="row" style="padding-left:1.2em;">
                     <div class="col-lg-3 col-md-4 col-sm-12 item" onClick="goTo('/reisen/london/')">
                         <div class="pourtour">
@@ -263,15 +260,16 @@
             </div>
         </div>
 
+
         <!-- Angebote 2019 & Reiseideen für zukünftige Ziele  -->
-        <div class="row philo" id="philosophie">
+        <div class="row mainpageparts" id="angebote">
             <div class="container">
                 <h1>Angebote 2019 & Reiseideen für zukünftige Ziele</h1>
                 <div class="row">
                     <!-- left side -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div>
-                            <img src="/images/banner/reisen.jpg" class="img-fluid">
+                            <img src="/images/banner/reisen.jpg" class="img-fluid" alt="">
                         </div>
                         <div>
                             <span>Auf Wasserstraßen zum Mythos um Murano</span>
@@ -314,7 +312,7 @@
         </div>
 
 
-        <!-- Galerie -->
+        <!-- Galerie – statische Bilderübersicht -->
 <!--
         <div class="galerie" id="galerie">
             <h1>Amalfiküste</h1>
@@ -353,277 +351,41 @@
 -->
 
 
-<!-- Contact form -->
-<!--        <div class="contact-form" id="kontakt">
-            <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <h1>Kontaktieren Sie uns</h1> 
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 right">
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-lg" placeholder="Ihr Name" name="">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control form-control-lg" placeholder="IhreEmail@email.com" name="email">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control form-control-lg">
-                                </textarea>
-                            </div>
-                            <input type="submit" class="btn btn-secondary btn-block" value="Senden" name="">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
--->
-
-
-<!--
+        <!-- Kontakt -->
         <div class="contact-form" id="kontakt">
             <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <h1>Kontaktieren Sie uns</h1> 
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h1>Kontaktieren Sie uns</h1>
+                        <div>
+                            <img src="/images/banner/kontakt.jpg" class="img-fluid" alt="">
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 right">
-                            <form action="https://formspree.io/oh.bildungsreisen@gmail.com" method="POST">
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-lg" placeholder="Ihr Name" name="name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control form-control-lg" placeholder="IhreEmail@email.com" name="_replyto">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control form-control-lg">
-                                </textarea>
-                            </div>
-                            <input type="submit" class="btn btn-secondary btn-block" value="Senden" name="">
-                            </form>
+                        <div>
+                            <span>Ihr Reisebegleiter</span>
                         </div>
                     </div>
-                </form>
-            </div>
-        </div>
--->
-<!-- this one gets your email address directly
-<form action="https://formspree.io/your@email.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
--->
-
-<!-- is this one activated
-<form method="POST" action="https://formspree.io/oh.bildungsreisen@gmail.com">
-  <input type="text" placeholder="Ihr Name" name="name">
-  <input type="email" name="email" placeholder="IhreEmail@email.com">
-  <textarea name="message" placeholder="Ihre Nachricht"></textarea>
-  <button type="submit">Senden</button>
-</form>
--->
-
-
-        <div class="contact-form" id="kontakt">
-            <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <h1>Kontaktieren Sie uns</h1>
-                            <div>
-                                <img src="/images/banner/kontakt.jpg" class="img-fluid">
-                            </div>
-                            <div>
-                                <span>Ihr Reisebegleiter</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 right" style="padding-left:1em;">
-                            <form action="https://formspree.io/oh.bildungsreisen@gmail.com" method="POST">
-                                <input type="text" id="nameInput" style="width:100%; padding: 0.5em; margin-top: 0.2em;" placeholder="Ihr Name" name="name">
-                                <input type="email" style="width:100%; padding: 0.5em; margin-top: 0.5em;" placeholder="IhreEmail@email.com" name="_replyto">
-                                <textarea name="message" placeholder="Ihre Nachricht" style="width:100%; min-height: 10em; padding: 0.5em; margin-top: 0.5em; border: thin solid #d3d3d3;"></textarea>
-                                <input type="submit" style="width:100%; padding: 0.5em; margin-top: 0.5em; background:#560020ff; color:#fff;" value="Senden" name="">
-                            </form>
-                        </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 right" style="padding-left:1em;">
+                        <form action="https://formspree.io/oh.bildungsreisen@gmail.com" method="POST">
+                            <input type="text" id="nameInput" style="width:100%; padding: 0.5em; margin-top: 0.2em;" placeholder="Ihr Name" name="name">
+                            <input type="email" style="width:100%; padding: 0.5em; margin-top: 0.5em;" placeholder="IhreEmail@email.com" name="_replyto">
+                            <textarea name="message" placeholder="Ihre Nachricht" style="width:100%; min-height: 10em; padding: 0.5em; margin-top: 0.5em; border: thin solid #d3d3d3;"></textarea>
+                            <input type="submit" style="width:100%; padding: 0.5em; margin-top: 0.5em; background:#560020; color:#fff;" value="Senden" name="">
+                        </form>
                     </div>
-            </div>
-        </div>
-
-       <!--
-        <div class="contact-form" id="kontakt">
-                <div class="container">
-                    <form>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h1>Kontaktieren Sie uns</h1>
-                                <img src="/images/banner/kontakt.jpg" class="img-fluid">
-                            </div>
-                            <div class="col-lg-8 col-md-8 col-sm-12 right">
-                                <form action="https://formspree.io/oh.bildungsreisen@gmail.com" method="POST">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Ihr Name" name="name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-lg" placeholder="IhreEmail@email.com" name="_replyto">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control form-control-lg">
-                                    </textarea>
-                                </div>
-                                <input type="submit" class="btn btn-secondary btn-block" value="Senden" name="">
-                                </form>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
-        -->
-
-
-<!-- Contact form -->
-<!-- keep working form on katjaq -->
-<!--
-        <div class="contact-form" id="kontakt">
-            <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <h1>Kontaktieren Sie uns</h1> 
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 right">
-                            <div id="wufoo-z177t7md194n6z3">
-                                Fill out my <a href="https://katjaq.wufoo.com/forms/z177t7md194n6z3">online form</a>.
-                            </div>
--->
-                            <!--<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">The easy to use <a href="http://www.wufoo.com/form-builder/">Wufoo form builder</a> helps you make forms easy, fast, and fun.</div>-->
-<!--                            <script type="text/javascript">var z177t7md194n6z3;(function(d, t) {
-                                var s = d.createElement(t), options = {
-                                    'userName':'katjaq',
-                                    'formHash':'z177t7md194n6z3',
-                                    'autoResize':true,
-                                    'height':'485',
-                                    'async':true,
-                                    'host':'wufoo.com',
-                                    'header':'hide',
-                                    'ssl':true};
-                                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-                                s.onload = s.onreadystatechange = function() {
-                                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-                                    try {
-                                        z177t7md194n6z3 = new WufooForm();
-                                        z177t7md194n6z3.initialize(options);
-                                        z177t7md194n6z3.display();
-                                        z177t7md194n6z3.count = 0;
-                                        z177t7md194n6z3.addEvent(window, "message", z177t7md194n6z3.bindMethod(() => {
-                                            z177t7md194n6z3.count++;
-                                            if(z177t7md194n6z3.count>1) {
-                                                formSubmitted();
-                                            }
-                                        }, z177t7md194n6z3));
-                                    } catch (e) {}};
-                                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-                                })(document, 'script');
-                            </script>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </div>
--->
-
-
-<!-- Contact form for oh -->
-<!-- only sends entries to thewir backend, no emails -->
-<!--
-        <div class="contact-form" id="kontakt">
-            <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <h1>Kontaktieren Sie uns</h1> 
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 right">
-                            <div id="wufoo-zoy725d1xbg4fz">
-                                Fill out my <a href="https://ohbildungsreisen.wufoo.com/forms/zoy725d1xbg4fz">online form</a>.
-                            </div>
--->
-                            <!--<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">The easy to use <a href="http://www.wufoo.com/form-builder/">Wufoo form builder</a> helps you make forms easy, fast, and fun.</div>-->
-                            <!--<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>-->
-<!--
-                            <script type="text/javascript">var zoy725d1xbg4fz;(function(d, t) {
-                                var s = d.createElement(t), options = {
-                                    'userName':'ohbildungsreisen',
-                                    'formHash':'zoy725d1xbg4fz',
-                                    'autoResize':true,
-                                    'height':'443',
-                                    'async':true,
-                                    'host':'wufoo.com',
-                                    'header':'hide',
-                                    'ssl':true};
-                                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-                                s.onload = s.onreadystatechange = function() {
-                                    $("#form1 a").hide();
-                                    $("#form1 a").hide();
-                                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-                                    try {
-                                        zoy725d1xbg4fz = new WufooForm();
-                                        zoy725d1xbg4fz.initialize(options);
-                                        zoy725d1xbg4fz.display();
-                                        zoy725d1xbg4fz.count = 0;
-                                        zoy725d1xbg4fz.addEvent(window, "message", zoy725d1xbg4fz.bindMethod(() => {
-                                            zoy725d1xbg4fz.count++;
-                                            if(zoy725d1xbg4fz.count>1) {
-                                                formSubmitted();
-                                            }
-                                        }, zoy725d1xbg4fz));
-                                    } catch (e) {}};
-                                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-                                })(document, 'script');
-                            </script>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
--->
-
-<!-- original code from wufoo for oh contact form 
-<div id="wufoo-zoy725d1xbg4fz">
-Fill out my <a href="https://ohbildungsreisen.wufoo.com/forms/zoy725d1xbg4fz">online form</a>.
-</div>
-<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
-
-<script type="text/javascript">var zoy725d1xbg4fz;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'ohbildungsreisen',
-'formHash':'zoy725d1xbg4fz',
-'autoResize':true,
-'height':'443',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { zoy725d1xbg4fz = new WufooForm();zoy725d1xbg4fz.initialize(options);zoy725d1xbg4fz.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
--->
 
 
         <!-- Impressum -->
-        <div class="row philo" id="impressum">
+        <div class="row mainpageparts" id="impressum">
             <div class="container">
                 <h1>Impressum</h1>
                 <div class="row">
                     <!-- left side -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div>
-                            <img src="/images/banner/impressum.jpg" class="img-fluid">
+                            <img src="/images/banner/impressum.jpg" class="img-fluid" alt="">
                         </div>
                         <div>
                             <span>Im Türkis des Himmels und des Meeres</span>
@@ -761,14 +523,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
 
         <!-- AGB -->
-        <div class="row philo" id="agb">
+        <div class="row mainpageparts" id="agb">
             <div class="container">
                 <h1>Allgemeine Geschäftsbedingungen</h1>
                 <div class="row">
                     <!-- left side -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div>
-                            <img src="/images/banner/agb.jpg" class="img-fluid">
+                            <img src="/images/banner/agb.jpg" class="img-fluid" alt="">
                         </div>
                         <div>
                             <span>Durch königliche Räume zum Puppenhaus der Queen</span>
@@ -947,6 +709,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
         </script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src='/js/main.js'></script>
+        <script src='/js/main.js'></script>
     </body>
 </html>

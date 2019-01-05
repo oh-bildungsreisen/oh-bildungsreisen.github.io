@@ -1,11 +1,24 @@
 $(document).ready(function(){
     $('.header').height($(window).height());
 
-    /* Scroll functionality */
-    $(".navbar a").click(function(){
-        $("body,html").animate({
-            scrollTop:$("#" + $(this).data('value')).offset().top
-        },1000)
+    /* This code has to be executed after ".header" height is changed */
+    var h = window.location.hash;
+    if (h) {
+        setTimeout(()=>{
+            console.log("BIM", h, $(h).offset().top)
+            $('html, body').stop().animate({
+                scrollTop : $(h).offset().top
+            }, 1000);
+        },1000);
+    }
+
+    /* Scroll functionality based on the offset of each #elementsection */
+    $(".navbar a.nav-link").click(function(){
+        if($(this).data('value')) {
+            $("body,html").animate({
+                scrollTop: $("#" + $(this).data('value')).offset().top
+            },1000)
+        }
     })
 
     /* for the image gallery */
@@ -13,7 +26,7 @@ $(document).ready(function(){
         openEffect: "none",
         closeEffect: "none"
     });
-
+    /* to have a smooth fade in of the bordeaux overlay over image */
     $(".zoom").hover(function(){
         $(this).addClass('transition');
     }, function(){
@@ -22,8 +35,12 @@ $(document).ready(function(){
 
     /* toggle oh-logo once it is hovered over */
     $(".oh").hover(
-        function() {$(this).attr("src","/images/logo/logo_inverted.svg");},
-        function() {$(this).attr("src","/images/logo/logo.svg");
+        /*function() {$(this).attr("src","/images/logo/logo_inverted.svg");},
+        function() {$(this).attr("src","/images/logo/logo.svg");*/
+        function(){
+        $(this).addClass('transition');
+    }, function(){
+        $(this).removeClass('transition');
     });
 
     /* toggle collapsed menuBar icon once it is hovered over */

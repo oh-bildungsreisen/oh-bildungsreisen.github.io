@@ -17,10 +17,12 @@ body {
     height:2.5em;
     background-image: url(/images/logo/logo.svg);
     background-size: 100%;
-    transition:.3s ease-in-out;
-    -webkit-transition:.3s ease-in-out;
-    /*transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);*/
+    transition-property: background-image;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
 }
 .image_logo:hover {
     background-image: url(/images/logo/logo_inverted.svg);
@@ -75,21 +77,12 @@ button:active,.button:active:focus,.button:visited {
 /* header with image and description text */
 .header {
     position: relative;
-    background-image: url('../images/banner/headerbg.JPG');
+    background-image: url('/images/banner/headerbg.JPG');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-/*
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.0);
-}
-*/
+/* header transparent overlay */
 .rectangle {
     position: absolute;
     min-height: 30%;
@@ -98,6 +91,7 @@ button:active,.button:active:focus,.button:visited {
     top: 0;
     background: rgba(0, 0, 0, 0.5);
 }
+/* description box */
 .description {
     position: absolute;
     top: 30%;
@@ -129,54 +123,47 @@ button:active,.button:active:focus,.button:visited {
 .btn btn-outline-secondary {
     background:#fff;
     color:#560020ff;
-/*    background:#560020ff;*/
-/*    color:#fff;*/
-/*    border:1px solid #560020ff;*/
     border:none;
-
 }
 
 
-/* Home page and Philosophie */
-.philo {
+/* Main page parts: Home page, Philosophie, Angebote, Impressum, AGB */
+.mainpageparts {
     margin: 4em 0;
     padding: 1em;
     position: relative;
 }
-.philo h1 {
+.mainpageparts h1 {
     color:#560020ff;
     margin: 1.6em 0 0 0;
     text-align:left;
 }
-.philo img {
+.mainpageparts img {
     /*height: 100%;*/
     width: 100%;
-    /*border-radius: 50%*/
     padding:2.5em 0 0 0.1em;
 }
 /* image caption left */
-.philo span {
+.mainpageparts span {
     /*display: block;*/
     text-align:left;
     color: #000;
     position: absolute;
-    /*left: 115px;*/
     padding: 1em 0 0 0;
 }
 /* Text Block right side container */
 /* vertical line */
-.philo .desc {
+.mainpageparts .desc {
     padding: 2.5em 1em 0 1em;
-    /*border-left:4px solid #671036;*/
 }
 /* subheadings of the text block */
-.philo .desc h3 {
+.mainpageparts .desc h3 {
     color: #560020ff;
     font-size:20px;
     font-weight:bold;
 }
 /* text of text block right side */
-.philo .desc p {
+.mainpageparts .desc p {
     line-height:1.75;
     color:#000;
     padding-top:1em;
@@ -208,8 +195,6 @@ button:active,.button:active:focus,.button:visited {
 /* Unsere Reisen */
 .reisen h1 {
     color:#560020ff;
-    /*margin: 2em;*/
-/*    padding: 2em 0 2.1em 0;*/
     padding: 2em 0 0 0.1em;
 }
 .reisen .item {
@@ -217,20 +202,17 @@ button:active,.button:active:focus,.button:visited {
     overflow: hidden;
     padding:0em;
     padding-top:2em;
-    /*margin-right:0.3em;*/
 }
 /* change cursor to pointer over image */
 .item {
     cursor: pointer;
     padding-top:2em;
-    /*margin-right:0.3em;*/
 }
-
+/* so that image size and caption width and overlay width match */
 .pourtour {
     padding: 0.3em; /* := x */
     position:relative;
 }
-
 /* Reisetitel unter dem Reisebild */
 /* x=0.3 */
 .reisen .des {
@@ -267,9 +249,7 @@ button:active,.button:active:focus,.button:visited {
     text-align:left;
 }
 .reisedetails img {
-    /*height: 100%;*/
     width: 100%;
-    /*border-radius: 50%*/
     padding:2.5em 0 0 0.1em;
 }
 /* image caption left */
@@ -278,7 +258,6 @@ button:active,.button:active:focus,.button:visited {
     text-align:left;
     color: #000;
     position: absolute;
-    /*left: 115px;*/
     padding: 1em 0em 0em 0em;
 }
 /* Text Block right side container */
@@ -313,6 +292,7 @@ img.zoom {
     height: 200px;
     border-radius:5px;
     object-fit:cover;
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -334,7 +314,6 @@ img.zoom {
 }
 /* Kontaktieren Sie uns */
 .contact-form h1 {
-    /*padding:0em 0.3em;*/
     padding: 1.2em 0em 0.3em 0em;
     color: #560020ff;
 }
@@ -352,7 +331,6 @@ img.zoom {
     font-size: 16px;
 }
 #kontakt img {
-    /*height: 100%;*/
     width: 100%;
 }
 #kontakt span {
@@ -360,7 +338,6 @@ img.zoom {
     text-align:left;
     color: #000;
     position: absolute;
-    /*left: 115px;*/
     padding: 1em 0 0 0;
 }
 
