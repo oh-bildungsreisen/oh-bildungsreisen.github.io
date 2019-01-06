@@ -79,7 +79,7 @@ button:active,.button:active:focus,.button:visited {
 /* header with image and description text */
 .header {
     position: relative;
-    background-image: url('/images/banner/headerbg_orig.JPG');
+    background-image: url('/images/banner/headerbg_1024.JPG');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -354,4 +354,7 @@ img.zoom {
     .header {
         background-attachment: scroll;
     }
+body{
+    background:red;
+}
 }
