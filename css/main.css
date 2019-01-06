@@ -17,6 +17,7 @@ body {
     height:2.5em;
     background-image: url(/images/logo/logo.svg);
     background-size: 100%;
+    background-repeat: no-repeat;
     transition-property: background-image;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -33,6 +34,7 @@ body {
     width:2.5em;
     height:2.5em;
     background-image: url(/images/logo/menuBar.svg);
+    background-repeat: no-repeat;
     background-size: 100%;
     transition:.3s ease-in-out;
     -webkit-transition:.3s ease-in-out;
@@ -77,9 +79,13 @@ button:active,.button:active:focus,.button:visited {
 /* header with image and description text */
 .header {
     position: relative;
-    background-image: url('/images/banner/headerbg.JPG');
+    background-image: url('/images/banner/headerbg_orig.JPG');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center;
 }
 /* header transparent overlay */
@@ -341,3 +347,11 @@ img.zoom {
     padding: 1em 0 0 0;
 }
 
+
+/* CSS specific to iOS devices */ 
+/* background-attachment: fixed; doesn't work on iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+    .header {
+        background-attachment: scroll;
+    }
+}
