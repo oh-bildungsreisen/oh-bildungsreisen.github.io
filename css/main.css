@@ -131,7 +131,6 @@ button:active,.button:active:focus,.button:visited {
     border:none;
 }
 
-
 /* Main page parts: Home page, Philosophie, Angebote, Impressum, AGB */
 .mainpageparts {
     margin: 4em 0;
@@ -174,8 +173,8 @@ button:active,.button:active:focus,.button:visited {
     padding-top:1em;
 }
 
-
-/* Galerie */
+/* Galerie –– die erste Test statische Galerie */
+/*
 .galerie {
     margin: 4em 0;
     position: relative;
@@ -190,7 +189,84 @@ button:active,.button:active:focus,.button:visited {
   width: 100%;
   margin: 0em;
 }
+*/
 
+/* Galerie main page gallery */
+/* Filter Buttons */
+.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    margin-right:1.1rem;
+    margin-bottom:0.8rem;
+    border-color: #560020ff;
+    background:#fff;
+    color:#560020;
+}
+.filter:focus {
+    color:#fff;
+    background:#560020ff;
+}
+.filter:active,.filter:active:focus {
+    color:#fff;
+    background:#560020ff;
+}
+.btn.btn-outline-secondary.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    margin-right:1.1rem;
+    border-color: #560020ff;
+    background:#fff;
+    color:#560020ff;
+}
+.btn.btn-outline-secondary.filter:focus {
+    color:#fff;
+    background:#560020ff;
+}
+.btn.btn-outline-secondary.filter:active,.btn.btn-outline-secondary.filter:active:focus {
+    color:#fff;
+    background:#560020ff;
+}
+a.filter:hover, a.filter:active {
+    color:#fff;
+    background:#560020ff;
+}
+a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:active {
+    color:#fff;
+    background:#560020ff;
+}
+
+/* Mainpage Gallery Bilder */
+.galerie h1 {
+    color:#560020ff;
+    margin: 1.6em 0 0 0;
+    text-align:left;
+}
+.maingalerie {
+    margin: 4em 0;
+    position: relative;
+}
+.maingalerie .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+.maingalerie img {
+    height: 15rem;
+    width: 100%;
+    margin: 0em;
+}
+.maingalerie .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/*
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+*/
 
 /* reisevorschau – images as overview over available trips */
 .reisen {
