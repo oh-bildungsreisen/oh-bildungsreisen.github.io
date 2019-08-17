@@ -73,6 +73,20 @@ $(function() {
     });
 });
 
+/* filter for image gallery on index page */
+$(function() {
+    var selectedClass = "";
+    $(".filter").click(function(){
+        selectedClass = $(this).attr("data-rel");
+        $("#maingalerie").fadeTo(100, 0.1);
+        $("#maingalerie div").not("."+selectedClass).fadeOut().removeClass('animation');
+        setTimeout(function() {
+        $("."+selectedClass).fadeIn().addClass('animation');
+        $("#maingalerie").fadeTo(300, 1);
+    }, 300);
+    });
+});
+
 /*
 function formSubmitted() {
     $("form").html("Vielen Dank für Ihre Nachricht.");
