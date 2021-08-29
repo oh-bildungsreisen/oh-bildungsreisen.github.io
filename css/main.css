@@ -172,6 +172,15 @@ button:active,.button:active:focus,.button:visited {
     color:#000;
     padding-top:1em;
 }
+/* text of text block right side indented in day trips */
+.p2 {
+    line-height:1.75;
+    color:#000;
+    /* padding-top:1em; */
+    margin-top:-15px;
+    margin-left:-12px;
+    /* margin-bottom: -25px; */
+}
 
 /* Galerie –– die erste Test statische Galerie */
 /*
