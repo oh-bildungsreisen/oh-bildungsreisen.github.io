@@ -181,6 +181,14 @@ button:active,.button:active:focus,.button:visited {
     margin-left:-12px;
     /* margin-bottom: -25px; */
 }
+/* text of text block right side */
+.feedbacktexts p {
+    padding: 2.5em 1em 0 1em;
+    margin-top: 1.5em;
+    line-height:1.75;
+    color:#000;
+    padding-top:1em;
+}
 
 /* Galerie –– die erste Test statische Galerie */
 /*
