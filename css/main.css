@@ -443,6 +443,9 @@ img.zoom {
     /* font-size:medium; */
     font-weight: 600;
 }
+#impressum a {
+    color: #000;
+}
 
 
 /* CSS specific to iOS devices */ 
