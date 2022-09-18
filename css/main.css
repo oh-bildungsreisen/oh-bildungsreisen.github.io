@@ -295,6 +295,18 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
     color:#560020ff;
     padding: 2em 0 0 0.1em;
 }
+/* subheadings of the text block */
+.reisen h3 {
+    color: #560020ff;
+    font-size:20px;
+    font-weight:bold;
+}
+/* text of text block right side */
+.reisen .desc p {
+    line-height:1.75;
+    color:#000;
+    padding-top:1em;
+}
 .reisen .item {
     position: relative;
     overflow: hidden;
@@ -326,6 +338,69 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
 }
 /* bordeaux overlay über dem Reisebild */
 .reisen .item:hover .des {
+    height: calc( 100% - 0.6em ); /* 2x */
+    background:#5600204D;
+    position: absolute;
+    width:calc( 100% - 0.6em ); /* 2x */
+    top: 0.6em; /* 2x */
+    border-bottom-left-radius: 0;
+}
+
+
+/* reiseideen */
+/* reisevorschau – images as overview over available trips */
+.reiseideen {
+    margin: 4em 0;
+    position: relative;
+}
+/* Unsere Reisen */
+.reiseideen h1 {
+    color:#560020ff;
+    padding: 2em 0 0 0.1em;
+}
+/* subheadings of the text block */
+.reiseideen h3 {
+    color: #560020ff;
+    font-size:20px;
+    font-weight:bold;
+}
+/* text of text block right side */
+.reiseideen .desc p {
+    line-height:1.75;
+    color:#000;
+    padding-top:1em;
+}
+.reiseideen .item {
+    position: relative;
+    overflow: hidden;
+    padding:0em;
+    padding-top:2em;
+}
+/* change cursor to pointer over image */
+.item {
+    cursor: pointer;
+    padding-top:2em;
+}
+/* so that image size and caption width and overlay width match */
+.pourtour {
+    padding: 0.3em; /* := x */
+    position:relative;
+}
+/* Reisetitel unter dem Reisebild */
+/* x=0.3 */
+.reiseideen .des {
+    background: #560020ff;
+    color: #fff;
+    text-align: left;
+    transition:.3s ease-in-out;
+    position: absolute;
+    width: calc( 100% - 0.6em ); /* 2x */
+    max-width:500px;
+    bottom: 24px;
+    transform: translate( 0,-0.3em); /* x */
+}
+/* bordeaux overlay über dem Reisebild */
+.reiseideen .item:hover .des {
     height: calc( 100% - 0.6em ); /* 2x */
     background:#5600204D;
     position: absolute;
