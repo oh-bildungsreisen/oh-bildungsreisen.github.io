@@ -519,6 +519,7 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
     color:#560020ff;
     margin: 0em 0 0 0;
     text-align:left;
+    font-weight: 400;
 }
 .reisedetails img {
     width: 100%;
@@ -542,7 +543,7 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
 .reisedetails .desc h3 {
     color: #560020ff;
     font-size:20px;
-    font-weight:bold;
+    font-weight:medium;
 }
 /* text of text block right side */
 .reisedetails .desc p {
