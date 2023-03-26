@@ -1,4 +1,99 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* Raleway */
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
 
 html,h1,h2,h3,h4,h5,h6,a {
     font-family: 'Raleway', sans-serif;
@@ -106,7 +201,7 @@ button:active,.button:active:focus,.button:visited {
 .description h1 {
 /*    color:#560020ff;*/
     color:#fff;
-    font-weight:semi-bold;
+    font-weight:400;
     font-family: 'Montserrat', sans-serif;
 }
 .description p {
@@ -141,6 +236,7 @@ button:active,.button:active:focus,.button:visited {
     color:#560020ff;
     margin: 1.6em 0 0 0;
     text-align:left;
+    font-weight: 400;
 }
 .mainpageparts img {
     /*height: 100%;*/
@@ -164,7 +260,7 @@ button:active,.button:active:focus,.button:visited {
 .mainpageparts .desc h3 {
     color: #560020ff;
     font-size:20px;
-    font-weight:bold;
+    font-weight:medium;
 }
 /* text of text block right side */
 .mainpageparts .desc p {
@@ -183,6 +279,8 @@ button:active,.button:active:focus,.button:visited {
 }
 /* text of text block right side */
 .feedbacktexts p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     padding: 2.5em 1em 0 1em;
     margin-top: 1.5em;
     line-height:1.75;
@@ -294,12 +392,13 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
 .reisen h1 {
     color:#560020ff;
     padding: 2em 0 0 0.1em;
+    font-weight: 400;
 }
 /* subheadings of the text block */
 .reisen h3 {
     color: #560020ff;
     font-size:20px;
-    font-weight:bold;
+    font-weight:medium;
 }
 /* text of text block right side */
 .reisen .desc p {
@@ -487,6 +586,7 @@ img.zoom {
 }
 /* Kontaktieren Sie uns */
 .contact-form h1 {
+    font-weight:400;
     padding: 1.2em 0em 0.3em 0em;
     color: #560020ff;
 }
