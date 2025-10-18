@@ -185,7 +185,7 @@ button:active,.button:active:focus,.button:visited {
 /* header transparent overlay */
 .rectangle {
     position: absolute;
-    min-height: 30%;
+    min-height: 20%;
     min-width: 100%;
     left: 0;
     top: 0;
@@ -194,7 +194,7 @@ button:active,.button:active:focus,.button:visited {
 /* description box */
 .description {
     position: absolute;
-    top: 30%;
+    top: 67.4%;
     margin: auto;
     padding: 2em;
 }
