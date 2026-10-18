@@ -1,97 +1,158 @@
 /* Raleway */
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-Light.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-Light.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-Medium.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-Regular.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-Medium.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-SemiBold.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-Bold.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-LightItalic.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-Black.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-LightItalic.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/static/Raleway-Italic.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-Italic.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
-  
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-MediumItalic.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-SemiBoldItalic.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/static/Raleway-BoldItalic.woff2') format('woff2'),
+         url('/fonts/Raleway/static/Raleway-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 
 /* Montserrat */
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    src: url('/fonts/Montserrat/static/Montserrat-Light.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    src: url('/fonts/Montserrat/static/Montserrat-Regular.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Medium.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('/fonts/Montserrat/static/Montserrat-SemiBold.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    src: url('/fonts/Montserrat/static/Montserrat-Bold.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+    src: url('/fonts/Montserrat/static/Montserrat-Black.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/Montserrat/static/Montserrat-LightItalic.ttf') format('truetype');
+    src: url('/fonts/Montserrat/static/Montserrat-LightItalic.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/static/Montserrat-Italic.woff2') format('woff2'),
+         url('/fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
 
@@ -99,11 +160,43 @@ html,h1,h2,h3,h4,h5,h6,a {
     font-family: 'Raleway', sans-serif;
     /*font-family: 'Montserrat', sans-serif;*/
 }
+html {
+    /* stop iOS/Android from inflating text sizes on rotation */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 body {
     font-family: 'Raleway', sans-serif;
+    /* Raleway uses old-style figures by default; lining figures keep dates and prices even */
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+    /* long e-mail addresses and URLs must not push the page wider than a phone screen */
+    overflow-wrap: break-word;
     padding:0;
     margin:0;
     background:#fff;
+}
+/* headings are never hyphenated automatically; a too-long word moves to the next line.
+   Where a word does not fit at all, mark the allowed break in the HTML with &shy; (e.g. Geschäfts&shy;bedingungen) */
+h1,h2,h3,h4,h5,h6 {
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+/* on tablets the contact heading sits in a narrow column; keep "Kontaktieren" on one line */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #kontakt h1 { font-size: 1.9rem; }
+}
+@media (max-width: 576px) {
+    h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.6rem; }
+    h3, .mainpageparts .desc h3, .reisen h3, .reiseideen h3, .reisedetails .desc h3 { font-size: 1.2rem; }
+}
+/* very small phones (e.g. iPhone SE 1st gen): headings a bit smaller still,
+   so e.g. "Allgemeine Geschäftsbedingungen" fits on two lines */
+@media (max-width: 359.98px) {
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.4rem; }
+    h3, .mainpageparts .desc h3, .reisen h3, .reiseideen h3, .reisedetails .desc h3 { font-size: 1.1rem; }
 }
 
 /* Logo in the header */
@@ -262,7 +355,7 @@ button:active,.button:active:focus,.button:visited {
 .mainpageparts .desc h3 {
     color: #560020ff;
     font-size:20px;
-    font-weight:medium;
+    font-weight:500;
 }
 /* text of text block right side */
 .mainpageparts .desc p {
@@ -400,7 +493,7 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
 .reisen h3 {
     color: #560020ff;
     font-size:20px;
-    font-weight:medium;
+    font-weight:500;
 }
 /* text of text block right side */
 .reisen .desc p {
@@ -545,7 +638,7 @@ a.btn.btn-outline-secondary.filter:hover, a.btn.btn-outline-secondary.filter:act
 .reisedetails .desc h3 {
     color: #560020ff;
     font-size:20px;
-    font-weight:medium;
+    font-weight:500;
 }
 /* text of text block right side */
 .reisedetails .desc p {
@@ -598,7 +691,8 @@ img.zoom {
     color: #560020ff;
 }
 .contact-form .right {
-    padding: 3.2em 0 0.75em 0;
+    /* right padding keeps the form fields off the screen edge on phones */
+    padding: 3.2em 1em 0.75em 0;
     max-width: 600px;
 }
 .contact-form .right .btn-secondary {
@@ -606,8 +700,14 @@ img.zoom {
     color: #fff;
     border:0;
 }
+/* name, e-mail and message fields share one border */
+.contact-form .right input[type="text"],
+.contact-form .right input[type="email"],
+.contact-form .right textarea {
+    border: 1px solid #808080;
+}
 .contact-form .right .form-control::placeholder {
-    color: #888;
+    color: #6c757d;
     font-size: 16px;
 }
 #kontakt img {
@@ -636,4 +736,24 @@ img.zoom {
     .header {
         background-attachment: scroll;
     }
+}
+
+/* when the columns stack, image captions must take up space instead of overlapping the text below (must stay below the caption rules above) */
+@media (max-width: 767.98px) {
+    .mainpageparts span, .reisedetails span, #kontakt span {
+        position: static;
+    }
+}
+
+/* date ranges in headings (e.g. 23.04.–30.04.2019) stay on one line */
+.date-range {
+    white-space: nowrap;
+}
+
+/* span.shy-word (added by main.js) and span.date-range sit inside headings; keep them out of the caption span rules above */
+.mainpageparts span.shy-word, .reisedetails span.shy-word, #kontakt span.shy-word,
+.mainpageparts span.date-range, .reisedetails span.date-range, #kontakt span.date-range {
+    position: static;
+    padding: 0;
+    color: inherit;
 }

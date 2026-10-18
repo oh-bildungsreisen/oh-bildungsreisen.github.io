@@ -92,3 +92,44 @@ function formSubmitted() {
     $("form").html("Vielen Dank für Ihre Nachricht.");
 }
 */
+/* headings: a word with soft hyphens (&shy;) is only hyphenated when it is too wide
+   for a whole line; otherwise it moves to the next line in one piece */
+function fitSoftHyphens() {
+    $('.shy-word').each(function() {
+        var h = $(this).closest('h1,h2,h3,h4,h5,h6')[0];
+        if (!h.getClientRects().length) return;
+        var s = getComputedStyle(h);
+        var avail = h.clientWidth - parseFloat(s.paddingLeft) - parseFloat(s.paddingRight);
+        var word = this.getAttribute('data-word');
+        this.textContent = word.replace(/­/g, '');
+        this.style.whiteSpace = 'nowrap';
+        if (this.getBoundingClientRect().width > avail) {
+            this.textContent = word;
+            this.style.whiteSpace = '';
+        }
+    });
+}
+$(function() {
+    /* wrap each heading word containing a soft hyphen in a span, once */
+    $('h1,h2,h3,h4,h5,h6').contents().filter(function() {
+        return this.nodeType === 3 && this.data.indexOf('­') >= 0;
+    }).each(function() {
+        var frag = document.createDocumentFragment();
+        this.data.split(/(\S*­\S*)/).forEach(function(part, i) {
+            if (i % 2) {
+                var span = document.createElement('span');
+                span.className = 'shy-word';
+                span.setAttribute('data-word', part);
+                span.textContent = part;
+                frag.appendChild(span);
+            } else if (part) {
+                frag.appendChild(document.createTextNode(part));
+            }
+        });
+        this.parentNode.replaceChild(frag, this);
+    });
+    fitSoftHyphens();
+    /* widths change once the web fonts have loaded */
+    if (document.fonts) document.fonts.ready.then(fitSoftHyphens);
+    $(window).on('load resize', fitSoftHyphens);
+});
